@@ -8,7 +8,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Survey Form</h1>
+    <h1 id+>Survey Form</h1>
+    <main>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+      <form id="survey-form">
+        <div id="form-template">
+          <div class="left">
+            <label for="name-label">*Name:</label>
+          </div>
+          <div class="right">
+            <input type="text" name="name" id="name" required autofocus placeholder="Enter your name"/>
+          </div>
+        </div>
+        <div id="form-template">
+          <div class="left">
+            <label for="email-label">*Email:</label>
+          </div>
+          <div class="right">
+            <input type="email" name="email" id="email" required autofocus placeholder="Enter your Email"/>
+          </div>
+        </div>
+        <div id="form-template">
+          <div class="left">
+            <label for="age-label">*Age:</label>
+          </div>
+          <div class="right">
+            <input
+              type="number"
+              name="number"
+              id="number"
+              min="16"
+              max="99"
+              required
+              autofocus
+              placeholder="Enter your Age"
+            />
+          </div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
