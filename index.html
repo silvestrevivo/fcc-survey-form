@@ -8,29 +8,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id+>Survey Form</h1>
+    <h1 id="title">Survey Form</h1>
     <main>
       <p id="description">Let us know how we can improve freeCodeCamp</p>
       <form id="survey-form">
         <div id="form-template">
           <div class="left">
-            <label for="name-label">*Name:</label>
+            <label for="name-label" id="name-label">*Name:</label>
           </div>
           <div class="right">
-            <input type="text" name="name" id="name" required autofocus placeholder="Enter your name"/>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              autofocus
+              placeholder="Enter your name"
+            />
           </div>
         </div>
         <div id="form-template">
           <div class="left">
-            <label for="email-label">*Email:</label>
+            <label for="email-label" id="email-label">*Email:</label>
           </div>
           <div class="right">
-            <input type="email" name="email" id="email" required autofocus placeholder="Enter your Email"/>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              autofocus
+              placeholder="Enter your Email"
+            />
           </div>
         </div>
         <div id="form-template">
           <div class="left">
-            <label for="age-label">*Age:</label>
+            <label for="age-label" id="number-label">*Age:</label>
           </div>
           <div class="right">
             <input
@@ -43,6 +57,139 @@
               autofocus
               placeholder="Enter your Age"
             />
+          </div>
+        </div>
+        <div id="form-template">
+          <div class="left">
+            <label for="age-label"
+              >Which option best describes your current role?:</label
+            >
+          </div>
+          <div class="right">
+            <select name="" id="dropdown" autofocus>
+              <option value="Student" disabled>select an option</option>
+              <option value="Student">Student</option>
+              <option value="Full time job">Full time job</option>
+              <option value="Full time learner">Full time learner</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div id="form-template">
+          <div class="left">
+            <label for="age-label"
+              >* How likely is that you would recommend freeCodeCamp to a
+              friend?:</label
+            >
+          </div>
+          <div class="right">
+            <input
+              type="radio"
+              name="recomendation"
+              value="Definitely"
+              required
+            />Definitely<br />
+            <input
+              type="radio"
+              name="recomendation"
+              value="Maybe"
+              required
+            />Maybe<br />
+            <input
+              type="radio"
+              name="recomendation"
+              value="Data Visualization"
+              required
+            />Not sure<br />
+          </div>
+        </div>
+        <div id="form-template">
+          <div class="left">
+            <label for="age-label">What do you like most in FCC:</label>
+          </div>
+          <div class="right">
+            <select name="" id="dropdown" autofocus>
+              <option value="Student" disabled>select an option</option>
+              <option value="Student">Challenges</option>
+              <option value="Full time job">Projects</option>
+              <option value="Full time learner">Community</option>
+              <option value="Prefer not to say">Open source</option>
+            </select>
+          </div>
+        </div>
+        <div id="form-template">
+          <div class="left">
+            <label for="age-label"
+              >Things that should be improved in the future (Check all that
+              apply):</label
+            >
+          </div>
+          <div class="right">
+            <input
+              type="checkbox"
+              name="improvement"
+              value="Front-end Projects"
+            />Front-end Projects<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="Back-end Projects"
+            />Back-end Projects<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="Data Visualization"
+            />Data Visualization<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="Challenges"
+            />Challenges<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="Open Source Community"
+            />Open Source Community<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="Gitter help rooms"
+            />Gitter help rooms<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="Videos"
+            />Videos<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="City Meetups"
+            />City Meetups<br />
+            <input type="checkbox" name="improvement" value="Wiki" />Wiki<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="Forum"
+            />Forum<br />
+            <input
+              type="checkbox"
+              name="improvement"
+              value="Additional Courses"
+            />Additional Courses<br />
+          </div>
+        </div>
+        <div id="form-template">
+          <div class="left">
+            <label for="age-label">Any Comments or Suggestions?:</label>
+          </div>
+          <div class="right">
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Enter your comment here..."
+            ></textarea>
           </div>
         </div>
         <button type="submit" id="submit">Submit</button>
